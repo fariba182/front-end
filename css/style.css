@@ -22,6 +22,14 @@ html, body {
     width: 960px;
     margin-left: 160px;
     margin-right: 160px;
+
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3);
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.09) inset;
+    -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.09) inset;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.09) inset;
 }
 
 #header {
@@ -325,6 +333,96 @@ li div p {
 
 /*	----------------------	tabs end	---------------------------------	*/
 
+/*	----------------------	widget	---------------------------------	*/
+
+.ui-widget {
+    clear:both;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1em;
+    float: right;
+    padding-right: 10px;
+    width:100%;
+    margin:10px 0px;
+}
+
+.ui-widget .ui-widget {
+    font-size: 1em;
+}
+
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1em;
+    float: right;
+}
+.ui-widget input {
+    background: url(../images/search.png) no-repeat right top transparent;
+    margin-top: 2px;
+}
+.ui-menu {
+    list-style: none;
+    background-color: #ffffff;
+    padding: 2px;
+    margin: 0;
+    display: block;
+    outline: none;
+    float: right;
+}
+
+.ui-menu .ui-menu {
+    margin-top: -3px;
+    position: absolute;
+}
+
+.ui-menu .ui-menu-item {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* support: IE10, see #8844 */
+    /*	list-style-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);	*/
+}
+
+.ui-menu .ui-menu-divider {
+    margin: 5px -2px 5px -2px;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    border-width: 1px 0 0 0;
+}
+
+.ui-menu .ui-menu-item a {
+    text-decoration: none;
+    display: block;
+    padding: 2px .4em;
+    line-height: 1.5;
+    min-height: 0; /* support: IE7 */
+    font-weight: normal;
+    background-color: #fff;
+}
+
+.ui-menu .ui-menu-item a.ui-state-focus,
+.ui-menu .ui-menu-item a.ui-state-active {
+    font-weight: normal;
+    margin: -1px;
+}
+
+.ui-helper-hidden {
+    display: none;
+}
+
+.ui-helper-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+/*	----------------------	widget end	---------------------------------	*/
 
 #footer {
     clear: both;

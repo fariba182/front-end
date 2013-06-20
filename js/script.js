@@ -62,3 +62,35 @@ if(document.images){
     image4.src = "images/IMG_11.jpg"
 }
 /*	------------------------------------------- image carousel end --------------------------------------------	*/
+
+/*	-------------------- Auto Complete -----------------------------------------	*/
+	$(function() {
+	    var availableTags = [
+			"ActionScript",
+			"AppleScript",
+			"Asp",
+			"BASIC",
+			"C",
+			"C++",
+			"Clojure",
+			"COBOL",
+			"ColdFusion",
+			"Erlang",
+			"Fortran",
+			"Groovy",
+			"Haskell",
+			"Java",
+			"JavaScript",
+			"Lisp",
+			"Perl",
+			"PHP",
+			"Python",
+			"Ruby",
+			"Scala",
+			"Scheme"
+	    ];
+	    $( "#tags" ).autocomplete({
+	        source: availableTags
+	    });
+	});
+/*	---------------------------------- Auto Complete end -------------------------------------------------	*/
