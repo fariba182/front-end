@@ -26,7 +26,7 @@ html, body {
 
 #header {
     width:100%;
-    height: 60px;
+    /*height: 60px;*/
     margin: 0;
     padding: 0;
 }
@@ -87,7 +87,7 @@ html, body {
     z-index: 1;
 	}
 #cssmenu li a{
-	background:#333333 url('images/seperator.gif') bottom right no-repeat;
+	background:#333333 url('../images/seperator.gif') bottom right no-repeat;
 	color:#cccccc;
 	display:block;
 	font-weight:normal;
@@ -98,7 +98,7 @@ html, body {
 	text-decoration:none;
 	}
 #cssmenu li a:hover, #cssmenu ul li:hover a{
-	background: #545454 url('images/hover.gif') bottom center no-repeat;
+	background: #545454 url('../images/hover.gif') bottom center no-repeat;
 	color:#FFFFFF;
 	text-decoration:none;
 	}
@@ -118,7 +118,7 @@ html, body {
 	
 	}
 #cssmenu li li {
-	background:url('images/sub_sep.gif') bottom left no-repeat;
+	background:url('../images/sub_sep.gif') bottom left no-repeat;
 	display:block;
 	float:none;
 	margin:0px;
@@ -139,7 +139,7 @@ html, body {
 	text-align:left;
 	}
 #cssmenu li ul a:hover, #cssmenu li ul li:hover a{
-	background:#545454 url('images/hover_sub.gif') center left no-repeat;
+	background:#545454 url('../images/hover_sub.gif') center left no-repeat;
 	border:0px;
 	color:#ffffff;
 	text-decoration:none;
@@ -155,6 +155,68 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+/*	----------------------	css grid	---------------------------------	*/
+.cssgrid {
+    margin: 0 auto;
+    padding: 0 0 0 1%;
+    max-width: 960px;
+}
+
+.onerow {
+    clear: both;
+    padding: 0 10px;
+}
+/*  ------------------------------------  common columns definitions  ----------------------------------------    */
+.col2, .col3 {
+    float: left;
+    margin: 0 3% 0 0;
+}
+
+.col2.last, .col3.last {
+        margin: 0;
+    }
+
+.col2 {
+    width: 48%;
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+.col2.last {
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.col3 {
+    width: 31%;
+    height: 200px;
+	background: #801255;
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+    /*padding: 20px 0;*/
+}
+.col3.last {
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+.col3 h1, .col3.last h1 {
+    font-size: 14px;
+}
+.col3 h3, .col3.last h3 {
+    font-size: 10px;
+}
+.col2 p, .col2.last p {
+    font-size: 10px;
+}
+    .col2 img, .col3 img, .col2.last img, .col3.last img {
+        width: 100%;
+        display: block;
+    }
+
+/*	----------------------	css grid end	---------------------------------	*/
+
 
 #footer {
     clear: both;
